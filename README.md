@@ -310,24 +310,3 @@ This project is open source and available under the MIT License.
 
 ---
 
-## 📞 Support & Contact
-
-For issues, questions, or suggestions:
-- Open an issue on GitHub
-- Check documentation in code comments
-- Review LlamaIndex docs: https://docs.llamaindex.ai
-
----
-
-## 🚀 Future Enhancements
-
-- [ ] Multi-turn conversation memory
-- [ ] Custom document ingestion
-- [ ] Fine-tuned models support
-- [ ] Caching layer for optimization
-- [ ] Advanced prompt templates
-- [ ] Analytics & logging dashboard
-
----
-
-**Last Updated:** May 2026 | Made with ❤️ for AI enthusiasts
