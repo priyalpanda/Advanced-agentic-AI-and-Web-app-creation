@@ -240,37 +240,6 @@ Settings.embed_model = HuggingFaceEmbedding(
 # Search Configuration
 DDGS(max_results=3)  # Adjust number of search results
 ```
-
----
-
-## 📈 Workflow Diagram
-
-```mermaid
-flowchart TD
-    START([User Query]) --> PARSE[Parse Input]
-    PARSE --> CHECK{Query Type?}
-    
-    CHECK -->|Calculation| CALC[Execute Math Tool]
-    CHECK -->|Search| WEBSEARCH[Perform Web Search]
-    CHECK -->|Complex| REASON[Agent Reasoning]
-    
-    CALC --> EMBED[Embed Results]
-    WEBSEARCH --> EMBED
-    REASON --> RETRIEVE[Retrieve from VectorDB]
-    
-    EMBED --> STORE[Store in ChromaDB]
-    RETRIEVE --> COMBINE[Combine Context]
-    STORE --> COMBINE
-    
-    COMBINE --> GENERATE[Generate Response<br/>via LLM]
-    GENERATE --> OUTPUT([Return to User])
-    
-    style START fill:#e1f5e1
-    style OUTPUT fill:#e1f5e1
-    style REASON fill:#ffe1e1
-    style GENERATE fill:#e1e5ff
-```
-
 ---
 
 ## 🤝 Contributing
