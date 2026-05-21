@@ -177,26 +177,6 @@ python agent.py.py
 streamlit run webapp2.py
 ```
 
-### Example Usage Flow
-
-```mermaid
-sequenceDiagram
-    User->>Streamlit UI: Enter query
-    Streamlit UI->>Agent: Process input
-    Agent->>LLM: Plan action
-    LLM-->>Agent: Reasoning output
-    Agent->>+Tools: Execute tool
-    Tools->>Search: Query web
-    Search-->>Tools: Results
-    Tools-->>-Agent: Tool result
-    Agent->>VectorDB: Retrieve context
-    VectorDB-->>Agent: Context
-    Agent->>LLM: Generate response
-    LLM-->>Agent: Final answer
-    Agent-->>Streamlit UI: Display result
-    Streamlit UI-->>User: Show output
-```
-
 ---
 
 ## 🛠️ Technologies
